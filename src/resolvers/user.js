@@ -1,7 +1,6 @@
 const DB = require("../../models");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const { combineResolvers } = require("graphql-resolvers");
 const { UserInputError } = require("apollo-server");
 const { ApolloError } = require("apollo-server-express");
 

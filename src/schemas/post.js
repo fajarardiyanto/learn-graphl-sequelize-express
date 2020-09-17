@@ -18,21 +18,8 @@ module.exports = gql`
   }
 
   extend type Mutation {
-    addPost(
-      title: String!
-      slug: String!
-      content: String!
-      status: String!
-      userId: Int!
-    ): Post
-    updatePost(
-      id: Int!
-      title: String!
-      slug: String!
-      content: String!
-      status: String!
-      userId: Int!
-    ): Post
+    addPost(title: String!, content: String!, status: String!): Post
+    updatePost(id: Int!, title: String, content: String, status: String): Post
     deletePost(id: Int!): Boolean
   }
 `;
